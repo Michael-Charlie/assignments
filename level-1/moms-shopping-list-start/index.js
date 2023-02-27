@@ -53,3 +53,5 @@ function deleteItem(){
     form.deleteItm.value = ""
     deleteItem.append(deleteBtn)
 }
+
+console.log("hello world")
