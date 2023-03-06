@@ -36,23 +36,6 @@ const readline = require("readline-sync");
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // const getNum = (type) => {
 //     let someNum = readline.question(`Please enter the ${type} number: `);
 //     if (!isNaN(someNum)) {

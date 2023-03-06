@@ -135,4 +135,225 @@ var arrOfFoods = ["pancake", "egg", "ice cream", "pizza", "hamburger"]
     console.log(arrOfFoods)
             // End of Javascript - Array Methods*****
 
-// 
+// *****Javascript - String Methods
+// Methods are Functions 
+// String Methods are pre-built by Javascript, so all you have to do is use them!
+// Full list can be found here: https://www.w3schools.com/jsref/jsref_obj_string.asp
+
+// toUpperCase & toLowerCase
+const user = "luke"
+const uppercasedLuke = user.toUpperCase()
+console.log(uppercasedLuke)
+// console.log(user)
+// Our original variable "user" stays lower cased.
+const lowercasedLuke = uppercasedLuke.toLowerCase()
+console.log(lowercasedLuke)
+
+
+// concat - similar to using + sign in our code
+const s = "s"
+const newUser = user.concat(s)
+console.log(newUser)
+// Below is the old way we learned how to "concat"
+const newUserTest = user + s
+console.log(newUserTest)
+
+
+// split - turns a string into an array
+var animal = "tiger"
+var characterArr = animal.split("")
+console.log(characterArr)
+
+
+// slice - let's you cut up a string
+var phoneNumber = "6764567890" // "676-456-7890"
+    var first3 = phoneNumber.slice(0, 3)
+    var next3 = phoneNumber.slice(3, 6)
+    var last4 = phoneNumber.slice(6)
+    var phoneNumWithDashes = first3 + "-" + next3 + "-" + last4
+    console.log(phoneNumWithDashes)
+
+
+// indexOf - finds the first match
+var city = "New York City"
+    var indexOfC = city.indexOf("C")
+    console.log(indexOfC)
+
+                    //End of Javascript - String Methods*****
+
+
+// *****Javascript - Mutability and Value Types
+
+
+// Mutable - Containers =< passed by Reference
+    //Array
+    //Object
+var arr = [1, 2, 3, 4, 5]
+    arr[0] = 6
+    console.log(arr)
+
+var person = {
+        name: "harry",
+        age: 12
+    }
+
+    person.hasWand = true
+    delete person.hasWand
+    console.log(person)
+
+    var newPerson = person
+    newPerson.hasWand = true 
+    console.log(person)  
+// Immutable - cannot be changed => passed by value
+    // String
+    // Numbers
+    // Booleans
+    var age = 10
+    var otherAge = age
+    otherAge = 12
+    
+    console.log(age)
+// typeof - returns the type of the data immediately to its right
+console.log( typeof [1, 2, 3, 4] )
+        // End of Javascript - Mutability and Value Types*****
+
+// *****Javascript - Constructor Functions
+
+// They build objects 
+// "new" - instantiates the object
+// Starts with a capital letter instead of lowercase
+
+function Car(make, model, year, honkSound){
+    this.make = make
+    this.model = model
+    this.year = year
+    this.honkSound = honkSound
+    // this.honk = function(){
+    //     console.log(this.honkSound)
+    // } ****This is commented out for the "prototype" below 
+}
+
+
+var jeep = new Car("Jeep", "Cherokee", 1995, "MEEERRRP")
+var mazda = new Car("Mazda", "3 hatchback", 2015, "BLAAARP")
+ 
+Car.prototype.honk = function(){
+     console.log(this.honkSound)
+}
+
+jeep.honk()
+mazda.honk()
+                // End of Javascript - Constructor Functions*****
+
+// *****Javascript - ES6 Part 1
+
+// const and let
+
+// var name = "steve"
+
+// const firstName = "joe"
+// firstName = "steve"
+// // We would get an error for the above const 
+// // let age = 12
+// age = 13
+
+// Global, Local, Bracket
+function someFunc(){
+   let a
+   if(2 === 2){
+       a = "hello"
+   }
+   console.log(a)
+}
+
+someFunc()
+
+// spread and rest (gather)
+    // Syntax:  ...
+function maxNumber(...nums){
+    console.log(nums)
+}
+
+maxNumber(0, 3, 58, 20, 200, 30)
+    // objects and arrays
+const colors3 = ["red", "blue"]
+const colors4 = ["yellow", "green"]
+
+const allColors = [...colors3, ...colors4]
+
+console.log(allColors)
+
+const personC = {
+    name: "rick",
+    age: 50
+}
+
+const personCopy = { ...personC }
+console.log(personCopy)
+
+
+// template literals - using the backtick quotes ` ` with ${} instead of concatination
+const name5 = "joe"
+// "hi " + name
+const greeting = `hi ${name5}`
+console.log(greeting)
+
+
+// import & export
+// uses require()
+// uses module.exports
+
+        // End of Javascript - ES6 Part 1*****
+
+//Javascript - ES6 Part 2
+
+// fat arrow functions
+function sum(){
+    
+}
+
+const sum2 = function(){
+    
+}
+
+const sum2ES6 = word => {
+    console.log(`ES6 is ${word}!`)
+    return word
+}
+// addEventListener("click", () => {
+    
+// })
+
+
+// object literals
+//Ex.
+// const blue = "blue"
+// const green = "green"
+// const red = "red"
+
+// const colors = { red, green, blue }
+
+// console.log(colors)
+
+// object destructuring
+const user2 = {
+    username: "joe123",
+    age1: 20,
+    _id: "f892jf2jf98j39fj"
+}
+
+const { username, age1 } = user2
+
+console.log(username)
+
+const names = ["john", "betty", "nick"]
+
+const [john, betty, nick] = names
+console.log(betty)
+
+// default parameters
+function sum(a = 5, b = 10){
+    return a + b
+}
+
+console.log(sum(7))
