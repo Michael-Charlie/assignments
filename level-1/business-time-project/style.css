@@ -54,6 +54,13 @@ main > h1 {
 }
 
 @media only screen and (max-width: 800px){
+    #grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 5px;
+    height: 1500px;
+}
     #header {
     background-color: rgb(8, 156, 248);
     border-radius: 10px;
@@ -80,7 +87,8 @@ main > h1 {
     margin: 10px;
     border: 1px solid black;
     grid-column: 1/6;
-    grid-row: 3/4;
+    grid-row: 3/5;
+    overflow-y: auto;
 }
 
 #footer {
