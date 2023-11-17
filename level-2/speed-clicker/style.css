@@ -1,0 +1,14 @@
+body {
+    background-color: gray;
+}
+
+#clicker {
+    display: grid;
+    justify-content: center;
+    background-color: rgb(42, 235, 235);
+}
+
+#count {
+    display: grid;
+    justify-content: center;
+}

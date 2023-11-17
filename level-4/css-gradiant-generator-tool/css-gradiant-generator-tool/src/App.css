@@ -1,0 +1,38 @@
+body {
+  background-color: rgb(94, 93, 93);
+}
+
+.box {
+  border: 1px solid black;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+
+/* .gradiant-container {
+  border: 1px solid black;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+.box {
+  border: 1px solid black;
+  height: 250px;
+  width: 500px;
+  background: linear-gradient(50deg, #FFFF00, #000000);
+  -moz-background: linear-gradient(50deg, #FFFF00, #000000);
+  -webkit: linear-gradient(50deg, #FFFF00, #000000);
+  margin: 10px;
+}
+
+.textarea {
+  margin: 10px;
+  height: 150px;
+  width: 500px;
+}
+
+.options {
+  border: 1px solid black;
+  box-sizing: border-box;
+  display: inline-block;
+} */

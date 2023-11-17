@@ -1,0 +1,13 @@
+.square {
+    height: 300px;
+    width: 300px;
+    outline: 5px solid white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -60px;
+    margin-left: -50px;
+}
+.body{
+    background-color: rgb(26, 25, 25);
+}

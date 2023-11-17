@@ -1,0 +1,92 @@
+body {
+    background-color: gray;
+}
+#grid-container {
+    display: flex;
+    justify-content: space-between;
+}
+#box1 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    border-radius: 10px;
+    border: 1px solid black;
+    transition: 1s, linear 1s;
+}
+#box1:hover{
+    background-color: blueviolet;
+    width: 200px;
+}
+
+#box2 {
+    width: 100px;
+    height: 100px;
+    background: rgb(95, 189, 7);
+    border-radius: 10px;
+    border: 1px solid black;
+    transition-duration: 500ms;
+    transition-timing-function: ease-out;
+    transition-delay: 200ms;
+}
+
+#box2:hover {
+    background-color: rgb(247, 250, 59);
+    height: 200px;
+}
+
+#box3 {
+    width: 100px;
+    height: 100px;
+    background: rgb(38, 222, 255);
+    border-radius: 10px;
+    border: 1px solid black;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in;
+    transition-delay: 500ms;
+}
+
+#box3:hover {
+    background-color: rgb(252, 67, 196);
+    width: 200px;
+    margin: 5px;
+}
+
+#box4 {
+    width: 100px;
+    height: 100px;
+    background: rgb(255, 136, 0);
+    border-radius: 10px;
+    border: 1px solid black;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 300ms;
+}
+
+#box4:hover {
+    background-color: rgb(166, 82, 245);
+    height: 300px;
+}
+
+#box5 {
+    width: 100px;
+    height: 100px;
+    background: rgb(4, 8, 243);
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+#box5:hover {
+    background-color: blueviolet;
+}
+
+#box6 {
+    width: 100px;
+    height: 100px;
+    background: rgb(250, 41, 180);
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+#box6:hover {
+    background-color: blueviolet;
+}

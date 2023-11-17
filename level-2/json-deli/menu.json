@@ -1,0 +1,73 @@
+{
+    "JSON menu": [
+    {
+        "appetizers": [
+            {
+                "name": "nachos",
+                "ingredients": ["tortilla chips", "nacho cheese"],
+                "description": "melted cheese over tortilla chips"
+            },
+            {
+                "name": "chicken wings",
+                "ingredients": ["chicken wings", "frank's red hot wing sauce"],
+                "description": "chimken wimgs"
+            }
+        ]
+    },
+    
+    {"cold sandwiches": [
+            {
+                "name": "turkey sandwich",
+                "ingredients": ["bread", "turkey", "mustard", "mayo"],
+                "description": "turmkey sandmwich"
+            },
+            {
+                "name": "ham sandwich",
+                "ingredients": ["bread", "ham", "mustard", "mayo"],
+                "description": "ham sandmwich"
+            }
+        ]
+    },
+
+    {"hot sandwiches": [
+            {
+                "name": "grilled cheese",
+                "ingredients": ["bread", "melted cheese"],
+                "description": "grimlled chmeese"
+            },
+            {
+                "name": "philly cheese steak",
+                "ingredients": ["philly", "cheese", "steak"],
+                "description": "phillmy cheemse steak"
+            }
+        ]
+    },
+
+    {"desserts": [
+            {
+                "name": "ice cream",
+                "ingredients": ["ice", "cream"],
+                "description": "ice cream"
+            },
+            {
+                "name": "cake",
+                "ingredients": ["frosting", "bread"],
+                "description": "cake"
+            }
+        ]
+    },
+    {"drinks": [
+            {
+                "name": "coke zero",
+                "ingredients": ["coke", "but zero calories"],
+                "description": "coke with zero sugar and zero cals"
+            },
+            {
+            "name": "coke",
+            "ingredients": ["coke"],
+            "description": "God's gift to mankind and Mexico"
+        }
+        ]
+    }
+    ]
+}

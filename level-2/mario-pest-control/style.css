@@ -1,0 +1,80 @@
+body {
+    background-color: gray;
+}
+
+/* #grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 5px;
+    height: auto;
+} */
+
+#grid-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#header {
+    background-color: rgb(172, 213, 248);
+    border-radius: 10px;
+    margin: 10px;
+    border: 1px solid white;
+    /* grid-column: 1/6;
+    grid-row: 1/2; */
+    text-align: center;
+    font-size: 35px;
+}
+
+#baddies {
+    display: flex;
+    justify-content: space-around;
+}
+
+#goombas {
+    background-color: rgba(165, 42, 42, 0.548);
+    border-radius: 10px;
+    margin: 10px;
+    border: 1px solid white;
+    text-align: center;
+}
+
+#bobombs {
+    background-color: black;
+    color: rgb(252, 235, 0);
+    border-radius: 10px;
+    margin: 10px;
+    border: 1px solid white;
+    /* grid-column: 3/4;
+    grid-row: 2/3; */
+    text-align: center;
+}
+
+#cheepcheeps {
+    background-color: rgb(248, 6, 6);
+    color: rgb(252, 252, 252);
+    border-radius: 10px;
+    margin: 10px;
+    border: 1px solid white;
+    /* grid-column: 5/6;
+    grid-row: 2/3; */
+    text-align: center;
+}
+
+#footer {
+    background-color: rgb(6, 232, 248);
+    border-radius: 10px;
+    margin: 10px;
+    border: 1px solid white;
+    /* grid-column: 5/6;
+    grid-row: 2/3; */
+    text-align: center;
+}
+
+#counter {
+    background-color: rgb(115, 248, 6);
+    border-radius: 10px;
+    margin: 10px;
+    border: 1px solid white;
+    text-align: center;
+}

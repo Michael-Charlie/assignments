@@ -1,0 +1,70 @@
+body {
+  background-color: gray;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+.form {
+  margin: 10px;
+  padding: 10px;
+}
+
+.form-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);  
+}
+
+.tell-us-about-yourself {
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  height: 100px;
+}
+
+.get-name-tag {
+  text-align: center;
+}
+
+.card {
+  margin: 10px;
+  padding: 10px;
+}
+
+.badge-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.card-name {
+  grid-column: auto;
+}
+
+.badge-logo {
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: silver;
+}
+
+.printed-badge {
+  align-items: center;
+  border: 2px solid black;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.tell-us {
+  width: 100%;
+  align-items: center;
+  border: 1px solid black;
+  padding: 5px;
+  text-align: center;
+  height: 100px;
+}
