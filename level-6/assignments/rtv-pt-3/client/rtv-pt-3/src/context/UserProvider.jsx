@@ -82,6 +82,13 @@ export default function UserProvider(props) {
     }))
   }
 
+  function getAllIssues() {
+    userAxios
+      .get("/api/issue")
+      .then((res) => setAllIssues(res.data))
+      .catch((err) => console.log(err));
+  }
+
   function getUserIssues() {
     userAxios
       .get("api/issue/user")
@@ -153,11 +160,7 @@ export default function UserProvider(props) {
       .catch((err) => console.log(err));
   }
 
-  function getAllIssues(){
-    userAxios.get("/api/issue")
-    .then(res => setAllIssues(res.data))
-    .catch(err => console.log(err))
-  }
+
 
 
   return (

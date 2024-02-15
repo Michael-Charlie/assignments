@@ -27,6 +27,5 @@ export default function Issue(props) {
       />
       <Comment issueId={_id} />
     </>
-    // Render comment form here
   );
 }
